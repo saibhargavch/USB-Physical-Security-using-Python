@@ -1,9 +1,133 @@
-here in the file there are three files included there are:
-Table of Contents:
+Here’s a detailed and professional README content you can use for your GitHub project:
 
-* USB PHYSICAL SECURITY.exe -- excutable file
-* project for ppt.pptx -- ppt for the usb physical security
-* testing 2.0.py -- Python code for the project 
+---
 
+# 🔐 USB Physical Security - Tkinter-based Windows USB Control
 
-  
+## 📋 Project Description
+
+**USB Physical Security** is a simple GUI-based desktop application developed in Python using `tkinter`. Its primary purpose is to **enable or disable USB storage access on Windows machines** by modifying specific registry settings. This project is particularly useful for enforcing physical device-level security policies in organizations or personal systems where USB access needs to be controlled.
+
+By using this tool, users can prevent unauthorized data transfer, virus injection, or data theft through USB storage devices.
+
+---
+
+## 🖼️ User Interface Overview
+
+The application includes the following features:
+
+* ✅ **Activate USB Ports** – Allows USB storage devices by enabling the registry key responsible for USB access.
+* ❌ **Deactivate USB Ports** – Blocks USB storage devices by disabling the registry key.
+* ℹ️ **Project Details** – Displays project, developer, and organization details in a separate popup window.
+* 🖼️ **Custom Background Image** and styled layout using `tkinter`.
+
+---
+
+## ⚙️ Features & Functionality
+
+### 🔧 USB Activation
+
+* Changes registry key:
+  `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR`
+* Sets `Start` value to `3`, which **enables** USB storage devices.
+
+### 🛑 USB Deactivation
+
+* Sets the same `Start` value to `4`, which **disables** USB storage devices.
+
+### 🪪 Project and Developer Info
+
+* Displays:
+
+  * Project Name and Description
+  * Submission Date and Status
+  * Developer Contact
+  * Organization Contact
+
+---
+
+## 📁 Folder Structure
+
+```
+📦 USB_Physical_Security
+ ┣ 📜 main.py                 # Main application file
+ ┣ 🖼️ UsbImage.png             # Background image (place in same directory)
+ ┗ 📄 README.md               # Project documentation
+```
+
+---
+
+## 🖥️ How to Run the Project
+
+### 🔴 Important: Run as Administrator
+
+To modify the Windows registry, **this application must be run with administrator privileges**.
+
+### Steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/usb-physical-security.git
+   cd usb-physical-security
+   ```
+
+2. **Install Python (if not already installed)**:
+   [Download Python](https://www.python.org/downloads/)
+
+3. **Run the app**:
+
+   ```bash
+   python main.py
+   ```
+
+> ✅ Make sure to right-click the terminal or Python and choose “Run as Administrator”.
+
+---
+
+## 📸 Screenshots
+
+| Main Window                           | Project Details Window                  |
+| ------------------------------------- | --------------------------------------- |
+| ![Main GUI](screenshots/main_gui.png) | ![Details](screenshots/details_gui.png) |
+
+> (Add your screenshots in a `screenshots/` folder)
+
+---
+
+## ⚠️ Disclaimer & Notes
+
+* This app **only works on Windows systems**.
+* Editing the registry can affect system behavior. **Use with caution.**
+* For permanent enforcement in enterprises, consider combining this with **Group Policy** settings or **USB whitelisting tools**.
+* The script currently **does not detect live USB insertions or ejections** — it purely controls access through the registry.
+
+---
+
+## 👨‍💻 Developer Info
+
+* **Name**: Saibhargav Chitteti
+* **Email**: [saibhargavch682@gmail.com](mailto:saibhargavch682@gmail.com)
+
+---
+
+## 🏢 Organization
+
+* **Company Name**: Supraja Technologies
+* **Contact**: [contact@suprajatechnologies.com](mailto:contact@suprajatechnologies.com)
+
+---
+
+## 📅 Project Info
+
+* **Submission Date**: 10-AUG-2024
+* **Status**: Completed
+* **Project Type**: Desktop Security Tool (Educational / Enterprise-ready)
+
+---
+
+## 📄 License
+
+This project is for educational and demonstrative purposes. No license has been applied. Please contact the developer for use in commercial or enterprise environments.
+
+---
